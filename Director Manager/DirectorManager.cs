@@ -6,13 +6,13 @@ using UnityEngine.UI;
 
 public class DirectorManager : MonoBehaviour
 {
-    #region
+    #region SingletonDirector
     public static DirectorManager instance;
     void Awake()
     {
         instance = this;
     }
-    #endregion
+    #endregion SingletonDirector
 
     [HideInInspector]
     public Button playerRunButton;
